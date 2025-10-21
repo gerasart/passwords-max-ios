@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support and Help for Passwords Max - Secure Password Manager for iOS">
+    <title>Support - Passwords Max</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 15px;
+            display: block;
+            border-radius: 18px;
+        }
+
+        h1 {
+            color: #1a1a1a;
+            font-size: 32px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 24px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-weight: 600;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .faq-item {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #3498db;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .faq-answer {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .warning-box p {
+            color: #856404;
+            margin-bottom: 0;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box p {
+            color: #0c5460;
+            margin-bottom: 0;
+        }
+
+        .contact-section {
+            background-color: #e8f5e9;
+            padding: 25px;
+            border-radius: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .contact-section h2 {
+            margin-top: 0;
+            border-bottom: none;
+        }
+
+        .contact-email {
+            font-size: 18px;
+            font-weight: 600;
+            color: #2e7d32;
+            margin: 15px 0;
+        }
+
+        .contact-email a {
+            color: #2e7d32;
+            text-decoration: none;
+            border-bottom: 2px solid #4caf50;
+        }
+
+        .contact-email a:hover {
+            color: #1b5e20;
+            border-bottom-color: #2e7d32;
+        }
+
+        ul {
+            margin: 15px 0 15px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        ol {
+            margin: 15px 0 15px 30px;
+        }
+
+        ol li {
+            margin-bottom: 15px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .feature-card {
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 16px;
+            color: #3498db;
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #f0f0f0;
+            text-align: center;
+            color: #777;
+            font-size: 14px;
+        }
+
+        .footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 14px;
+            color: #c7254e;
+        }
+
+        strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 26px;
+            }
+
+            h2 {
+                font-size: 20px;
+            }
+
+            .feature-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="app-icon.png" alt="Passwords Max App Icon" class="app-icon">
+            <h1>Passwords Max Support</h1>
+            <p class="subtitle">Get help with your secure password manager</p>
+        </div>
+
+        <h2>📚 Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How secure is Passwords Max?</div>
+            <div class="faq-answer">
+                <p>Passwords Max uses military-grade AES-256 encryption to protect your passwords. All data is stored in iOS Keychain, which is Apple's secure encrypted storage system. Your vault is protected by Face ID or Touch ID, and the app includes auto-lock functionality. We never collect, transmit, or store your data on any server.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What happens if I lose my device?</div>
+            <div class="faq-answer">
+                <p>Your passwords are encrypted and protected by biometric authentication. Without your Face ID or Touch ID, no one can access your vault. However, we strongly recommend creating encrypted backups regularly through the app's export feature. Store these backups in a secure location.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ Can I sync my passwords across multiple devices?</div>
+            <div class="faq-answer">
+                <p>Passwords Max does not include cloud sync to maintain maximum privacy and security. Your data stays only on your device. However, you can manually transfer passwords between devices using the encrypted backup and restore feature.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ How do I import passwords from iCloud Keychain?</div>
+            <div class="faq-answer">
+                <p>Passwords Max includes one-tap import from Apple Passwords (iCloud Keychain). Simply go to Settings → Import → Apple Passwords and follow the prompts. The app will guide you through the process.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ Does Passwords Max work offline?</div>
+            <div class="faq-answer">
+                <p>Yes! Passwords Max is completely offline and doesn't require an internet connection. All features work without network access, ensuring your passwords are never transmitted anywhere.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ What is 2FA/TOTP and how do I use it?</div>
+            <div class="faq-answer">
+                <p>2FA (Two-Factor Authentication) adds an extra layer of security to your accounts. Passwords Max includes a built-in TOTP authenticator that generates time-based codes. To add 2FA to a password entry, tap the entry, select "Add 2FA", and either scan the QR code or enter the secret key manually.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ I forgot my Face ID/Touch ID. How do I access my passwords?</div>
+            <div class="faq-answer">
+                <p>Passwords Max uses your device's biometric authentication. If you're unable to authenticate with Face ID or Touch ID, you'll need to use your device passcode. This is handled by iOS, not the app. If you've lost access to your device entirely, you can restore from an encrypted backup on a new device.</p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">❓ Can I recover my passwords if I delete the app?</div>
+            <div class="faq-answer">
+                <p>Only if you've created an encrypted backup before deleting the app. When you uninstall Passwords Max, all data stored in the app is permanently deleted. Always create and securely store encrypted backups before uninstalling.</p>
+            </div>
+        </div>
+
+        <h2>🚀 Getting Started</h2>
+
+        <h3>First Time Setup</h3>
+        <ol>
+            <li><strong>Install Passwords Max</strong> from the App Store</li>
+            <li><strong>Grant Permissions:</strong> Allow Face ID/Touch ID access when prompted</li>
+            <li><strong>Import Existing Passwords</strong> (optional): Use the import feature to bring in passwords from Apple Passwords or CSV files</li>
+            <li><strong>Create Your First Password Entry:</strong> Tap the + button and fill in your credentials</li>
+            <li><strong>Set Up Auto-Lock:</strong> Go to Settings to configure auto-lock timeout</li>
+        </ol>
+
+        <h2>💡 Key Features</h2>
+
+        <div class="feature-grid">
+            <div class="feature-card">
+                <h3>🔐 Password Storage</h3>
+                <p>Store unlimited passwords with username, password, URL, and notes. Each entry is encrypted individually.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📱 2FA Authenticator</h3>
+                <p>Built-in TOTP generator creates time-based codes for two-factor authentication.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📂 Categories</h3>
+                <p>Organize passwords with customizable categories and icons. Create categories for work, personal, banking, etc.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>⭐ Favorites</h3>
+                <p>Mark frequently used passwords as favorites for quick access from the main screen.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>🔍 Smart Search</h3>
+                <p>Quickly find passwords by searching titles, usernames, URLs, or notes.</p>
+            </div>
+
+            <div class="feature-card">
+                <h3>📊 Password Strength</h3>
+                <p>Visual indicator shows password strength to help you maintain secure credentials.</p>
+            </div>
+        </div>
+
+        <h2>📥 Importing Passwords</h2>
+
+        <h3>From Apple Passwords (iCloud Keychain)</h3>
+        <ol>
+            <li>Open Passwords Max</li>
+            <li>Go to Settings → Import → Apple Passwords</li>
+            <li>Follow the on-screen instructions</li>
+            <li>Grant necessary permissions when prompted</li>
+            <li>Your passwords will be imported securely</li>
+        </ol>
+
+        <h3>From CSV File</h3>
+        <ol>
+            <li>Prepare a CSV file with columns: <code>title, username, password, url, notes</code></li>
+            <li>Go to Settings → Import → CSV</li>
+            <li>Select your CSV file</li>
+            <li>Review the imported entries</li>
+        </ol>
+
+        <div class="warning-box">
+            <p><strong>⚠️ Important:</strong> Delete the CSV file from your device after importing to maintain security.</p>
+        </div>
+
+        <h2>📤 Exporting & Backups</h2>
+
+        <h3>Creating an Encrypted Backup</h3>
+        <ol>
+            <li>Go to Settings → Export → Create Backup</li>
+            <li>Choose a strong backup password (different from any stored passwords)</li>
+            <li>Save the encrypted backup file to a secure location (iCloud Drive, external storage, etc.)</li>
+            <li>Store the backup password securely</li>
+        </ol>
+
+        <div class="info-box">
+            <p><strong>💡 Tip:</strong> Create regular backups, especially before major iOS updates or device changes.</p>
+        </div>
+
+        <h3>Restoring from Backup</h3>
+        <ol>
+            <li>Go to Settings → Import → Restore Backup</li>
+            <li>Select your encrypted backup file</li>
+            <li>Enter your backup password</li>
+            <li>Your passwords will be restored</li>
+        </ol>
+
+        <h2>🔧 Troubleshooting</h2>
+
+        <h3>Face ID/Touch ID Not Working</h3>
+        <ul>
+            <li>Ensure biometric authentication is enabled in iOS Settings → Face ID & Passcode</li>
+            <li>Try using your device passcode instead</li>
+            <li>Restart the app</li>
+            <li>Restart your device</li>
+        </ul>
+
+        <h3>Import Failed</h3>
+        <ul>
+            <li>Check that your CSV file format matches the required format</li>
+            <li>Ensure the file is not corrupted</li>
+            <li>Try importing a smaller batch of passwords</li>
+            <li>Verify you've granted necessary permissions</li>
+        </ul>
+
+        <h3>App Crashes or Freezes</h3>
+        <ul>
+            <li>Ensure you're running the latest version from the App Store</li>
+            <li>Restart the app</li>
+            <li>Restart your device</li>
+            <li>Check for iOS updates</li>
+            <li>If problems persist, contact support</li>
+        </ul>
+
+        <h3>Can't Scan QR Code for 2FA</h3>
+        <ul>
+            <li>Ensure you've granted camera permission in iOS Settings → Passwords Max</li>
+            <li>Ensure good lighting conditions</li>
+            <li>Hold your device steady</li>
+            <li>Alternatively, manually enter the secret key</li>
+        </ul>
+
+        <h2>🔒 Security Best Practices</h2>
+
+        <ul>
+            <li><strong>Use Strong Passwords:</strong> Create unique, complex passwords for each account</li>
+            <li><strong>Enable 2FA:</strong> Use the built-in authenticator for accounts that support it</li>
+            <li><strong>Regular Backups:</strong> Create encrypted backups regularly</li>
+            <li><strong>Keep iOS Updated:</strong> Install the latest iOS security updates</li>
+            <li><strong>Secure Your Device:</strong> Use a strong device passcode</li>
+            <li><strong>Review Passwords:</strong> Periodically check and update old passwords</li>
+            <li><strong>Auto-Lock Settings:</strong> Set an appropriate auto-lock timeout</li>
+        </ul>
+
+        <h2>📱 System Requirements</h2>
+
+        <ul>
+            <li>iOS 15.0 or later</li>
+            <li>iPhone or iPad</li>
+            <li>Face ID or Touch ID capable device (recommended)</li>
+            <li>Approximately 50 MB of storage space</li>
+        </ul>
+
+        <h2>🔄 Updates</h2>
+
+        <p>
+            Passwords Max is regularly updated with new features, improvements, and security enhancements. 
+            Updates are free and delivered through the App Store. Enable automatic updates to ensure you 
+            always have the latest version.
+        </p>
+
+        <h2>🌐 Privacy & Data</h2>
+
+        <p>
+            Passwords Max is built with privacy as the core principle. We do not collect, transmit, or 
+            store any of your data. All passwords remain encrypted on your device. For complete details, 
+            please review our <a href="privacy-policy.html">Privacy Policy</a>.
+        </p>
+
+        <div class="contact-section">
+            <h2>📧 Contact Support</h2>
+            <p>
+                Need additional help? Have a feature request? Found a bug? We're here to help!
+            </p>
+            <div class="contact-email">
+                Email: <a href="mailto:gerasymenkoph@gmail.com">gerasymenkoph@gmail.com</a>
+            </div>
+            <p>
+                <strong>Response Time:</strong> We typically respond within 24-48 hours
+            </p>
+            <p>
+                <strong>Note:</strong> Please do not send us your passwords or backup files. 
+                We cannot access your encrypted data, and sending passwords via email is insecure.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Passwords Max</strong> - Secure Password Manager for iOS</p>
+            <p>
+                <a href="privacy-policy.html">Privacy Policy</a> | 
+                <a href="mailto:gerasymenkoph@gmail.com">Contact</a>
+            </p>
+            <p>© 2025 Maksym Herasymenko. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
